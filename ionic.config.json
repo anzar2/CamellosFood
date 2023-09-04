@@ -1,0 +1,7 @@
+{
+  "name": "camellos_food",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
