@@ -74,6 +74,14 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+  
+  /** CamellosTheme **/
+  --ion-color-camellostheme: #a800e6;
+  --ion-color-camellostheme-rgb: 168,0,230;
+  --ion-color-camellostheme-contrast: #ffffff;
+  --ion-color-camellostheme-contrast-rgb: 255,255,255;
+  --ion-color-camellostheme-shade: #9400ca;
+  --ion-color-camellostheme-tint: #b11ae9;
 }
 
 @media (prefers-color-scheme: dark) {

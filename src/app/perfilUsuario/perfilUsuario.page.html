@@ -1,0 +1,52 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="#primary">
+    <div class="container">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+      <ion-title class="ion-text-center">Perfil de Usuario</ion-title>
+    </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Información de Usuario</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="stacked">Nombre</ion-label>
+        <ion-input value="Juan Pérez" readonly></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="stacked">Correo</ion-label>
+        <ion-input value="juan@example.com" readonly></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+  <div class="container">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button [routerLink]="['./misPedidos']"> Mis Pedidos </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['./misTarjetas']">
+            Mis Tarjetas
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <ion-button [routerLink]="['./misCupones']"> Mis Cupones </ion-button>
+        </ion-col>
+        <ion-col>
+          <ion-button [routerLink]="['./misDirecciones']">
+            Mis Direcciones
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>
