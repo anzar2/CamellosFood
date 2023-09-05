@@ -1,134 +1,67 @@
-<ion-header [translucent]="true">
-  <ion-toolbar color="#primary">
-    <div class="container">
-      <ion-buttons slot="start">
-        <ion-menu-button></ion-menu-button>
-      </ion-buttons>
-      <ion-title>Camello's Food</ion-title>
-      <ion-searchbar placeholder="Búsqueda"></ion-searchbar>
-    </div>
-  </ion-toolbar>
+<!-- Se creo la pagina principal -Fernando -->
+<ion-header>
+    <ion-toolbar>
+        <!-- Menu izquierda -->
+        <div style="display: flex;">
+            <ion-buttons slot="start">
+                <ion-menu-button color="light"></ion-menu-button>
+            </ion-buttons>
+            <ion-title class="ion-text-center" style="margin-left: -30px;">Camello's Food</ion-title>
+        </div>
+        <!-- menu carrito -->
+        <div style="display: flex;">
+            <ion-searchbar id="search" placeholder="Buscar"></ion-searchbar>
+            <ion-buttons slot="end">
+                <ion-menu-button color="light" slot="end"></ion-menu-button>
+            </ion-buttons>
+        </div>
+        <br>
+    </ion-toolbar>
 </ion-header>
-
-<ion-content [fullscreen]="true">
-  <div class="container">
-    <ion-card>
-      <ion-row>
-        <!-- Columna para la imagen (lado izquierdo) -->
-        <ion-col size="4">
-          <img
-            alt="Silhouette of mountains"
-            src="https://ionicframework.com/docs/img/demos/card-media.png"
-            class="imagen-izq"
-          />
-          <br />
-          <br />
-          <br />
-          <br />
-          <ion-button>Comprar</ion-button>
-        </ion-col>
-        <!-- Columna para el contenido (lado derecho) -->
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Producto 1</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more,
-            nothing less.
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  </div>
-  <div class="container">
-    <ion-card>
-      <ion-row>
-        <!-- Columna para la imagen (lado izquierdo) -->
-        <ion-col size="4">
-          <img
-            alt="Silhouette of mountains"
-            src="https://ionicframework.com/docs/img/demos/card-media.png"
-            class="imagen-izq"
-          />
-          <br />
-          <br />
-          <br />
-          <br />
-          <ion-button>Comprar</ion-button>
-        </ion-col>
-        <!-- Columna para el contenido (lado derecho) -->
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Producto 2</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more,
-            nothing less.
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  </div>
-  <div class="container">
-    <ion-card>
-      <ion-row>
-        <!-- Columna para la imagen (lado izquierdo) -->
-        <ion-col size="4">
-          <img
-            alt="Silhouette of mountains"
-            src="https://ionicframework.com/docs/img/demos/card-media.png"
-            class="imagen-izq"
-          />
-          <br />
-          <br />
-          <br />
-          <br />
-          <ion-button>Comprar</ion-button>
-        </ion-col>
-        <!-- Columna para el contenido (lado derecho) -->
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Producto 3</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more,
-            nothing less.
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  </div>
-  <div class="container">
-    <ion-card>
-      <ion-row>
-        <!-- Columna para la imagen (lado izquierdo) -->
-        <ion-col size="4">
-          <img
-            alt="Silhouette of mountains"
-            src="https://ionicframework.com/docs/img/demos/card-media.png"
-            class="imagen-izq"
-          />
-          <br />
-          <br />
-          <br />
-          <br />
-          <ion-button>Comprar</ion-button>
-        </ion-col>
-        <!-- Columna para el contenido (lado derecho) -->
-        <ion-col size="8">
-          <ion-card-header>
-            <ion-card-title>Producto 4</ion-card-title>
-            <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-          </ion-card-header>
-          <ion-card-content>
-            Here's a small text description for the card content. Nothing more,
-            nothing less.
-          </ion-card-content>
-        </ion-col>
-      </ion-row>
-    </ion-card>
-  </div>
+<ion-content>
+    <div style="display: flex; justify-content: center;">
+        <h2>Productos</h2>
+    </div>
+    <hr>
+    <div>
+        <ion-grid style="text-align: center;">
+            <ion-row>
+                <ion-col size="6">
+                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']">
+                        <article class="categoria">
+                            <div style="max-width: 75px;"><img src="../../assets/img/entradas.png" alt=""></div>
+                            <div><h2>Entradas</h2></div>
+                        </article>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="6">
+                    <ion-item [routerLink]="['/perfil-usuario/']" lines="none">
+                        <article class="categoria">
+                            <div style="max-width: 75px;"><img src="../../assets/img/colaciones.png" alt=""></div>
+                            <div><h2>Colaciones</h2></div>
+                        </article>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+            <ion-row>
+                <ion-col size="6">
+                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']">
+                        <article class="categoria">
+                            <div style="max-width: 75px;"><img src="../../assets/img/comida_rapida.png" alt=""></div>
+                            <div><h3>Comida Rapida</h3></div>
+                        </article>
+                    </ion-item>
+                </ion-col>
+                <ion-col size="6">
+                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']">
+                        <article class="categoria">
+                            <div style="max-width: 75px;"><img src="../../assets/img/bebestibles.png" alt=""></div>
+                            <div><h2>Bebestibles</h2></div>
+                        </article>
+                    </ion-item>
+                </ion-col>
+            </ion-row>
+        </ion-grid>
+    </div>
+    <hr>
 </ion-content>
