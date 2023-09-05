@@ -1,10 +1,15 @@
+<!-- Se realiza las barras laterales para uso en todas las páginas -->
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu contentId="main-content" type="overlay">
-      <ion-content>
+    <ion-menu menuId="menu-principal" contentId="main-content" >
+      <ion-header>
+        <ion-toolbar>
+          <ion-title><strong>Camello's Food 🐫</strong></ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">
         <ion-list id="inbox-list">
-          <ion-list-header>Camello's Food</ion-list-header>
-          <ion-note>camellos_food@gmail.com</ion-note>
+          <ion-note>Bienvenido Juan Pérez </ion-note>
 
           <ion-menu-toggle
             auto-hide="false"
@@ -30,5 +35,13 @@
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
+    <ion-menu side="end" contentId="main-content" menuId="carrito">
+      <ion-header>
+        <ion-toolbar>
+          <ion-title>Carrito</ion-title>
+        </ion-toolbar>
+      </ion-header>
+      <ion-content class="ion-padding">This is the end menu content.</ion-content>
+    </ion-menu>
   </ion-split-pane>
 </ion-app>
