@@ -1,4 +1,4 @@
-//Se mejoro considerablemente el menu y el toolbar con respecto al anterior - Fernando y Benjamin
+<!-- Se mejoro considerablemente el menu y el toolbar con respecto al anterior - Fernando y Benjamin -->
 <ion-header>
     <ion-toolbar>
         <div style="display: flex;">
@@ -36,7 +36,7 @@
                     </ion-item>
                 </ion-col>
                 <ion-col size="6">
-                    <ion-item [routerLink]="['/perfil-usuario/']" lines="none">
+                    <ion-item [routerLink]="['/perfil-usuario/']" lines="none" detail="false">
                         <article class="categoria">
                             <div style="max-width: 75px;"><img src="../../assets/img/colaciones.png" alt=""></div>
                             <div><h2>Colaciones</h2></div>
@@ -46,7 +46,7 @@
             </ion-row>
             <ion-row>
                 <ion-col size="6">
-                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']">
+                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']" detail="false">
                         <article class="categoria">
                             <div style="max-width: 75px;"><img src="../../assets/img/comida_rapida.png" alt=""></div>
                             <div><h3>Comida Rapida</h3></div>
@@ -54,9 +54,9 @@
                     </ion-item>
                 </ion-col>
                 <ion-col size="6">
-                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']">
+                    <ion-item lines="none" [routerLink]="['/perfil-usuario/']" detail="false">
                         <article class="categoria">
-                            <div style="max-width: 75px;"><img src="../../assets/img/bebestibles.png" alt=""></div>
+                            <div style="max-width: 75px;" aria-hidden="true"><img src="../../assets/img/bebestibles.png" alt="" aria-hidden="true"></div>
                             <div><h2>Bebestibles</h2></div>
                         </article>
                     </ion-item>

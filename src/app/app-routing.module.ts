@@ -13,8 +13,8 @@ const routes: Routes = [
     loadChildren: () => import('./folder/folder.module').then( m => m.FolderPageModule)
   },
   {
-    path: 'inicio',
-    loadChildren: () => import('./inicio/inicio.module').then( m => m.InicioPageModule)
+    path: 'productos',
+    loadChildren: () => import('./productos/productos.module').then( m => m.InicioPageModule)
   },
   {
     path: 'perfil-usuario',

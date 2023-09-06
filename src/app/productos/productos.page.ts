@@ -2,11 +2,11 @@ import { Component } from "@angular/core";
 
 @Component({
     selector: 'inicio-page',
-    templateUrl: './inicio.page.html',
+    templateUrl: './productos.page.html',
     styleUrls:[
-        './inicio.page.scss',
+        './productos.page.scss',
         '../../camellosfood.theme.scss'
     ],
 })
 
-export class InicioPage {}
+export class ProductosPage {}
