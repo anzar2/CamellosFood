@@ -3,14 +3,17 @@
   <ion-split-pane contentId="main-content">
     <ion-menu menuId="menu-principal" contentId="main-content" >
       <ion-header>
-        <ion-toolbar>
-          <ion-title><strong>Camello's Food 🐫</strong></ion-title>
-        </ion-toolbar>
+          <ion-toolbar>
+            <ion-title color="light"><strong>Menu</strong></ion-title>
+          </ion-toolbar>
       </ion-header>
-      <ion-content class="ion-padding">
+      <ion-content>
         <ion-list id="inbox-list">
-          <ion-note>Bienvenido Juan Pérez </ion-note>
-
+          <ion-list-header>
+            <ion-text>
+              <span>Bienvenido, Juan Pérez</span>
+            </ion-text>
+          </ion-list-header>
           <ion-menu-toggle
             auto-hide="false"
             *ngFor="let p of appPages; let i = index"
@@ -38,7 +41,7 @@
     <ion-menu side="end" contentId="main-content" menuId="carrito">
       <ion-header>
         <ion-toolbar>
-          <ion-title>Carrito</ion-title>
+          <ion-title color="light">Tu carrito</ion-title>
         </ion-toolbar>
       </ion-header>
       <ion-content class="ion-padding">This is the end menu content.</ion-content>

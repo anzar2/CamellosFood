@@ -4,7 +4,7 @@ import { MenuController } from '@ionic/angular';
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
-  styleUrls: ['app.component.scss'],
+  styleUrls: ['app.component.scss', '../camellosfood.theme.scss'],
 })
 export class AppComponent {
   public appPages = [
