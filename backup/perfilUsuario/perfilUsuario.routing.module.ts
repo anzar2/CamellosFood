@@ -17,14 +17,6 @@ const routes: Routes = [
     path: 'misDirecciones',
     loadChildren: () => import('./misDirecciones/misDirecciones.module').then( m => m.MisDireccionesPageModule)
   },
-  {
-    path: 'misPedidos',
-    loadChildren: () => import('./mis-pedidos/mis-pedidos.module').then( m => m.MisPedidosPageModule)
-  },
-  {
-    path: 'misCupones',
-    loadChildren: () => import('./mis-cupones/mis-cupones.module').then( m => m.MisCuponesPageModule)
-  },
 ];
 
 @NgModule({

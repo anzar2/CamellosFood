@@ -3,9 +3,9 @@
   <ion-toolbar class="xd">
     
       <ion-buttons slot="start">
-        <ion-menu-button color="light"></ion-menu-button>
+        <ion-menu-button></ion-menu-button>
       </ion-buttons>
-      <ion-title color="light">Perfil de Usuario</ion-title>
+      <ion-title class="ion-text-center">Perfil de Usuario</ion-title>
    
   </ion-toolbar>
 </ion-header>
@@ -27,11 +27,7 @@
     </ion-card-content>
   </ion-card>
   <div class="container">
-    <ion-item [routerLink]="['./misPedidos']" detail="true"> Mis pedidos </ion-item>
-    <ion-item [routerLink]="['./misTarjetas']" detail="true"> Mis tarjetas </ion-item>
-    <ion-item [routerLink]="['./misCupones']" detail="true"> Mis cupones </ion-item>
-    <ion-item [routerLink]="['./misDirecciones']" detail="true"> Mis direcciones </ion-item>
-    <!-- <ion-grid>
+    <ion-grid>
       <ion-row>
         <ion-col>
           <ion-button [routerLink]="['./misPedidos']"> Mis Pedidos </ion-button>
@@ -52,6 +48,6 @@
           </ion-button>
         </ion-col>
       </ion-row>
-    </ion-grid> -->
+    </ion-grid>
   </div>
 </ion-content>

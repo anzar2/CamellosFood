@@ -1,36 +1,18 @@
 <!-- Se realiza las barras laterales para uso en todas las páginas -->
 <ion-app>
   <ion-split-pane contentId="main-content">
-    <ion-menu menuId="menu-principal" contentId="main-content" >
-      <ion-header>
-          <ion-toolbar>
-            <ion-title color="light"><strong>Menu</strong></ion-title>
-          </ion-toolbar>
-      </ion-header>
+    <ion-menu menuId="menu-principal" contentId="main-content">
       <ion-content>
         <ion-list id="inbox-list">
           <ion-list-header>
-            <ion-text>
+            <ion-text class="ion-padding">
               <span>Bienvenido, Juan Pérez</span>
             </ion-text>
           </ion-list-header>
-          <ion-menu-toggle
-            auto-hide="false"
-            *ngFor="let p of appPages; let i = index"
-          >
-            <ion-item
-              routerDirection="root"
-              [routerLink]="[p.url]"
-              lines="none"
-              detail="false"
-              routerLinkActive="selected"
-            >
-              <ion-icon
-                aria-hidden="true"
-                slot="start"
-                [ios]="p.icon + '-outline'"
-                [md]="p.icon + '-sharp'"
-              ></ion-icon>
+          <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
+            <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false"
+              routerLinkActive="selected">
+              <ion-icon aria-hidden="true" slot="start" [ios]="p.icon + '-outline'" [md]="p.icon + '-sharp'"></ion-icon>
               <ion-label>{{ p.title }}</ion-label>
             </ion-item>
           </ion-menu-toggle>

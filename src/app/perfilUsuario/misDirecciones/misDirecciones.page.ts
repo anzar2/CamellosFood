@@ -1,15 +1,12 @@
-import { Component, OnInit } from '@angular/core';
+import { Component} from '@angular/core';
 
 @Component({
   selector: 'app-mis-direcciones',
   templateUrl: './misDirecciones.page.html',
-  styleUrls: ['./misDirecciones.page.scss'],
+  styleUrls: ['./misDirecciones.page.scss', '../../../camellosfood.theme.scss'],
 })
-export class MisDireccionesPage implements OnInit {
+export class MisDireccionesPage {
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
 }

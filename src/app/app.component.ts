@@ -8,8 +8,8 @@ import { MenuController } from '@ionic/angular';
 })
 export class AppComponent {
   public appPages = [
-    { title: 'Inicio', url: '/inicio/', icon: 'home' },
-    { title: 'Mi perfil', url: './perfil-usuario', icon: 'person' },
+    { title: 'Inicio', url: '', icon: 'home' },
+    { title: 'Mi perfil', url: '/perfil-usuario', icon: 'person' },
     { title: 'Productos', url: '/productos/', icon: 'fast-food' },
     { title: 'Carrito', url: '/folder/archived', icon: 'cart' },
     { title: 'Cerrar sesión', url: '/folder/trash', icon: 'power' },
