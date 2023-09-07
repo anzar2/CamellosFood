@@ -16,9 +16,9 @@
       <ion-card-title>Información de Usuario</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <div style="height: 170px;">
+      <div style="height: 170px; width: 100%;">
         <div style="display: flex; ">
-          <ion-item>
+          <ion-item style="width: 100%;">
             <ion-label position="stacked">Nombre</ion-label>
             <ion-input id="user_name" value="Juan Pérez" disabled></ion-input>
           </ion-item>
@@ -29,7 +29,7 @@
           </ion-buttons>
         </div>
         <div style="display: flex;">
-          <ion-item>
+          <ion-item style="width: 100%;">
             <ion-label position="stacked">Correo</ion-label>
             <ion-input value="juan@example.com" id="email" disabled></ion-input>
           </ion-item>
@@ -50,14 +50,17 @@
             Cancelar
           </ion-button>
         </ion-buttons>
+        <ion-alert trigger="btn_submit" header="¿Estas seguro?" subHeader="Estas a punto de actualizar tus datos" [buttons]="alertButton"></ion-alert>
       </div>
     </ion-card-content>
 
   </ion-card>
-  <div class="container">
-    <ion-item [routerLink]="['./misPedidos']" detail="true"> Mis pedidos </ion-item>
-    <ion-item [routerLink]="['./misTarjetas']" detail="true"> Mis tarjetas </ion-item>
-    <ion-item [routerLink]="['./misCupones']" detail="true"> Mis cupones </ion-item>
-    <ion-item [routerLink]="['./misDirecciones']" detail="true"> Mis direcciones </ion-item>
-  </div>
+  <ion-card>
+    <div class="container">
+      <ion-item [routerLink]="['./misPedidos']" detail="true"> Mis pedidos </ion-item>
+      <ion-item [routerLink]="['./misTarjetas']" detail="true"> Mis tarjetas </ion-item>
+      <ion-item [routerLink]="['./misCupones']" detail="true"> Mis cupones </ion-item>
+      <ion-item [routerLink]="['./misDirecciones']" detail="true"> Mis direcciones </ion-item>
+    </div>
+  </ion-card>
 </ion-content>
