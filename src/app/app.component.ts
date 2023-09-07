@@ -13,6 +13,8 @@ export class AppComponent {
     { title: 'Productos', url: '/productos/', icon: 'fast-food' },
     { title: 'Carrito', url: '/detalle-carrito', icon: 'cart' },
     { title: 'Cerrar sesión', url: '/folder/trash', icon: 'power' },
+    { title: 'Productos', url: '/productos/', icon: 'fast-food' },
+
   ];
   constructor(private menuCtrl: MenuController) {}
 

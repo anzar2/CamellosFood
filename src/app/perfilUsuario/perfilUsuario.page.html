@@ -1,12 +1,12 @@
 <!-- Elimine un div que se veia feo xd -Fernando -->
 <ion-header [translucent]="true">
   <ion-toolbar class="xd">
-    
-      <ion-buttons slot="start">
-        <ion-menu-button color="light"></ion-menu-button>
-      </ion-buttons>
-      <ion-title color="light">Perfil de Usuario</ion-title>
-   
+
+    <ion-buttons slot="start">
+      <ion-menu-button color="light"></ion-menu-button>
+    </ion-buttons>
+    <ion-title color="light">Mi perfil</ion-title>
+
   </ion-toolbar>
 </ion-header>
 
@@ -16,42 +16,51 @@
       <ion-card-title>Información de Usuario</ion-card-title>
     </ion-card-header>
     <ion-card-content>
-      <ion-item>
-        <ion-label position="stacked">Nombre</ion-label>
-        <ion-input value="Juan Pérez" readonly></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="stacked">Correo</ion-label>
-        <ion-input value="juan@example.com" readonly></ion-input>
-      </ion-item>
+      <div style="height: 170px; width: 100%;">
+        <div style="display: flex; ">
+          <ion-item style="width: 100%;">
+            <ion-label position="stacked">Nombre</ion-label>
+            <ion-input id="user_name" value="Juan Pérez" disabled></ion-input>
+          </ion-item>
+          <ion-buttons>
+            <ion-button (click)="cambiarNombre()" id="edit_button_name">
+              <ion-icon name="create-outline" color="primary"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+        <div style="display: flex;">
+          <ion-item style="width: 100%;">
+            <ion-label position="stacked">Correo</ion-label>
+            <ion-input value="juan@example.com" id="email" disabled></ion-input>
+          </ion-item>
+          <ion-buttons>
+            <ion-button (click)="cambiarCorreo()" id="edit_button_email">
+              <ion-icon name="create-outline" color="primary"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </div>
+      </div>
+
+      <div id="confirm-form" style="display: none; justify-content: center;">
+        <ion-buttons>
+          <ion-button color="primary" type="submit" id="btn_submit" disabled>
+            Actualizar
+          </ion-button>
+          <ion-button disabled id="btn_cancel" (click)="cancelarOperacion()">
+            Cancelar
+          </ion-button>
+        </ion-buttons>
+        <ion-alert trigger="btn_submit" header="¿Estas seguro?" subHeader="Estas a punto de actualizar tus datos" [buttons]="alertButton"></ion-alert>
+      </div>
     </ion-card-content>
+
   </ion-card>
-  <div class="container">
-    <ion-item [routerLink]="['./misPedidos']" detail="true"> Mis pedidos </ion-item>
-    <ion-item [routerLink]="['./misTarjetas']" detail="true"> Mis tarjetas </ion-item>
-    <ion-item [routerLink]="['./misCupones']" detail="true"> Mis cupones </ion-item>
-    <ion-item [routerLink]="['./misDirecciones']" detail="true"> Mis direcciones </ion-item>
-    <!-- <ion-grid>
-      <ion-row>
-        <ion-col>
-          <ion-button [routerLink]="['./misPedidos']"> Mis Pedidos </ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button [routerLink]="['./misTarjetas']">
-            Mis Tarjetas
-          </ion-button>
-        </ion-col>
-      </ion-row>
-      <ion-row>
-        <ion-col>
-          <ion-button [routerLink]="['./misCupones']"> Mis Cupones </ion-button>
-        </ion-col>
-        <ion-col>
-          <ion-button [routerLink]="['./misDirecciones']">
-            Mis Direcciones
-          </ion-button>
-        </ion-col>
-      </ion-row>
-    </ion-grid> -->
-  </div>
+  <ion-card>
+    <div class="container">
+      <ion-item [routerLink]="['./misPedidos']" detail="true"> Mis pedidos </ion-item>
+      <ion-item [routerLink]="['./misTarjetas']" detail="true"> Mis tarjetas </ion-item>
+      <ion-item [routerLink]="['./misCupones']" detail="true"> Mis cupones </ion-item>
+      <ion-item [routerLink]="['./misDirecciones']" detail="true"> Mis direcciones </ion-item>
+    </div>
+  </ion-card>
 </ion-content>

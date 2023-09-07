@@ -17,6 +17,22 @@
             </ion-item>
           </ion-menu-toggle>
         </ion-list>
+
+        <ion-accordion-group color="dark">
+          <ion-accordion value="first">
+            <ion-item slot="header" color="light" lines="none">
+                Platos
+            </ion-item>
+            <div slot="content" class="ion-padding">
+              <ion-menu-toggle>
+                <ion-item detail="true" [routerLink]="['']" lines="none"><ion-icon name="ribbon-outline"></ion-icon>Entradas</ion-item>
+                <ion-item detail="true" [routerLink]="['/perfil-usuario']" lines="none"><ion-icon name="ice-cream-outline"></ion-icon>Colaciones</ion-item>
+                <ion-item detail="true" lines="none"><ion-icon name="fast-food-outline"></ion-icon>Comida rapida</ion-item>
+                <ion-item detail="true" lines="none"><ion-icon name="wine-outline"></ion-icon>Bebestibles</ion-item>
+              </ion-menu-toggle>
+            </div>
+          </ion-accordion>
+        </ion-accordion-group>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
