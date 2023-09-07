@@ -6,4 +6,6 @@ import { Component } from "@angular/core";
     styleUrls: ['./inicio.page.scss', '../../camellosfood.theme.scss']
 })
 
-export class InicioPage{}
+export class InicioPage{
+    
+}

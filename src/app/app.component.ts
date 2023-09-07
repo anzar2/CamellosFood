@@ -11,7 +11,7 @@ export class AppComponent {
     { title: 'Inicio', url: '', icon: 'home' },
     { title: 'Mi perfil', url: '/perfil-usuario', icon: 'person' },
     { title: 'Productos', url: '/productos/', icon: 'fast-food' },
-    { title: 'Carrito', url: '/folder/archived', icon: 'cart' },
+    { title: 'Carrito', url: '/detalle-carrito', icon: 'cart' },
     { title: 'Cerrar sesión', url: '/folder/trash', icon: 'power' },
   ];
   constructor(private menuCtrl: MenuController) {}

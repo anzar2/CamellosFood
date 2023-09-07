@@ -1,0 +1,32 @@
+ion-card{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.color-changing-text {
+    font-size: 24px;
+    font-weight: bold;
+    animation: colorChange 3s linear infinite alternate; /* Animación de cambio de color */
+}
+
+@keyframes colorChange {
+    0% {
+        color: #0088ff; /* Azul */
+    }
+    50%{
+        color: #004581;
+    }
+    100% {
+        color: #000000; /* Azul oscuro */
+    }
+}
+
+body{
+    background-image: url('../../assets/img/camello.jpg') !important;
+    background-size: cover; /* Ajusta la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    background-attachment: fixed;
+}
+
+

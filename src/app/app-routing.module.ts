@@ -18,7 +18,11 @@ const routes: Routes = [
   {
     path: 'perfil-usuario',
     loadChildren: () => import('./perfilUsuario/perfilUsuario.module').then( m => m.PerfilUsuarioPageModule)
+  },  {
+    path: 'detalle-carrito',
+    loadChildren: () => import('./detalle-carrito/detalle-carrito.module').then( m => m.DetalleCarritoPageModule)
   },
+
 ];
 
 @NgModule({

@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+      <div style="display: flex;">
+          <ion-buttons slot="start" size="large">
+              <ion-menu-button menu="menu-principal"><ion-icon name="menu-outline" size="large" color="light"></ion-icon></ion-menu-button>
+          </ion-buttons>
+          <div style="display: flex;  width: 100%; justify-content: center;">
+              <h1 class="main-title" style="font-family: BebasNeue; font-size: 50px;">Camello's Food</h1>
+          </div>
+      </div>
+  </ion-toolbar>
+  <ion-toolbar>
+      <div style="display: flex;">
+          <ion-searchbar id="search" color="light" animated="true"></ion-searchbar>
+          <ion-buttons slot="end">
+              <ion-menu-button menu="carrito"><ion-icon name="cart-outline" size="large" color="light"></ion-icon></ion-menu-button>
+          </ion-buttons>
+      </div>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <br>
+  <div class="container">
+    <ion-text>Detalle de Compra</ion-text>
+    <br>
+    <ion-grid style="align-items: center;justify-content: center;">
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>Carrito</ion-col>
+        <ion-col>$ 11.570</ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>IVA</ion-col>
+        <ion-col>$ 2.198</ion-col>
+      </ion-row>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>Envío</ion-col>
+        <ion-col>$ 2.490</ion-col>
+      </ion-row>
+      <hr>
+      <ion-row class="ion-align-items-center ion-justify-content-center">
+        <ion-col>Total</ion-col>
+        <ion-col>$ 16.258</ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+
+</ion-content>
+<ion-footer [translucent]="true" class="ion-align-items-center">
+  <ion-toolbar>
+    <ion-title><ion-button expand="block" style="font-family: BebasNeue; font-size: 35px;">PAGAR</ion-button></ion-title>
+  </ion-toolbar>
+</ion-footer>
